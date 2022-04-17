@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include epcqrcode *.css
+recursive-include epcqrcode *.csv
+recursive-include epcqrcode *.html
+recursive-include epcqrcode *.ico
+recursive-include epcqrcode *.js
+recursive-include epcqrcode *.json
+recursive-include epcqrcode *.md
+recursive-include epcqrcode *.png
+recursive-include epcqrcode *.py
+recursive-include epcqrcode *.svg
+recursive-include epcqrcode *.txt
+recursive-exclude epcqrcode *.pyc
