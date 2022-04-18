@@ -39,6 +39,14 @@ With this, you can also make use of Jinja template variables, e.g., to use the s
 </div>
 ```
 
+As the QRCode is embedded as an HTML image, the QRCode also works on the PDF print. Other solutions, such as SVGs, images with data URIs or canvas rendered elements don't work in ERPNext on the PDF prints.
+
+## Example
+
+A screenshot of how this could look like on a sales invoice
+
+![example](https://user-images.githubusercontent.com/15350076/163834196-143db56e-7c85-4181-9de5-20f47d472009.png)
+
 ## Update
 
 From the frappe-bench folder, run updates with 
