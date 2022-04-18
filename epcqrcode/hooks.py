@@ -7,7 +7,7 @@ app_description = "An EPC-QRCode generator for creating QRCodes, e.g., on sales 
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "office@bytegrasp.com"
-app_license = "Custom"
+app_license = "MIT"
 
 # Includes in <head>
 # ------------------
