@@ -33,8 +33,9 @@ You can use this endpoint as source to an image, e.g., within a custom HTML prin
 With this, you can also make use of Jinja template variables, e.g., to use the sales invoice number as payment reference in the QRCode.
 
 ```
+{% set bank_iban = frappe.db.get_value("Bank Account", filters={"company": doc.company}, fieldname="iban") %}
 <div style="margin-top: 10px;">
-  <img width="110" height="110" src="/api/method/epcqrcode.generator.get_code?name=Your+Company&reference={{ doc.name }}&iban=AT026000000001349870&amount={{ doc.grand_total }}&scale=4&border=0">
+  <img width="110" height="110" src="/api/method/epcqrcode.generator.get_code?name={{ doc.company | urlencode }}&reference={{ doc.name }}&iban={{ bank_iban }}&amount={{ doc.grand_total }}&scale=4&border=0">
   <p>Zahlen mit QR-Code</p>
 </div>
 ```
@@ -55,7 +56,7 @@ From the frappe-bench folder, run updates with
 
 ## Compatibility
 
-The custom app is tested against ERPNext v13.26.0.
+The custom app works with ERPNext versions from 13.26.0 to 14.5.1.
 
 ## License 
 
