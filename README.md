@@ -56,7 +56,7 @@ From the frappe-bench folder, run updates with
 
 ## Compatibility
 
-The custom app works with ERPNext versions from 13.26.0 to 14.5.1.
+The custom app works with ERPNext versions from 13.26.0 to 14.12.1.
 
 ## License 
 
