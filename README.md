@@ -9,7 +9,7 @@ They encode all necessary data (IBAN, amount, recipient) and may be placed on in
 
 From the frappe-bench folder, execute
 
-    $ bench get-app https://github.com/bytegrasp/epcqrcode.git
+    $ bench get-app https://github.com/4metrics/epcqrcode.git
     $ bench --site YOUR_SITE install-app epcqrcode
 
 where `YOUR_SITE` is e.g. erp.example.com
@@ -62,5 +62,5 @@ The custom app works with ERPNext versions from 13.26.0 to 14.12.1.
 
 MIT License, refer to LICENSE
 
-The copyright is owned by Bytegrasp OG and contributors. 
+The copyright is owned by 4metrics and contributors. 
 The software comes as-is without any warranty.
