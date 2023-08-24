@@ -4,7 +4,7 @@ from segno import helpers
 import frappe
 from werkzeug.wrappers import Response
 
-@frappe.whitelist()
+@frappe.whitelist(allow_guest=True)
 def get_code():
   pName = frappe.request.args.get('name', default='', type=str)
   pIBAN = frappe.request.args.get('iban', default='', type=str)
