@@ -1,4 +1,4 @@
-## epcqrcode
+## erpnext-epcqrcode
 
 An EPC-QRCode generator in ERPNext.
 
@@ -9,7 +9,7 @@ They encode all necessary data (IBAN, amount, recipient) and may be placed on in
 
 From the frappe-bench folder, execute
 
-    $ bench get-app https://github.com/4metrics/epcqrcode.git
+    $ bench get-app https://github.com/4metrics/erpnext-epcqrcode.git
     $ bench --site YOUR_SITE install-app epcqrcode
 
 where `YOUR_SITE` is e.g. erp.example.com
